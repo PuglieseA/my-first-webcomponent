@@ -13,6 +13,7 @@ please execute therefore the following commands
 cd my-first-webcomponent
 ng add @angular/elements
 ```
+> you will get an error in the terminal but just ignore it
 
 In the next step you need to create a component. which you want to serve.
 
@@ -24,6 +25,11 @@ ng generate component the-webcomponent
 Now you can deliver the component as a webcomponent like that:
 
 ```angularjs
+import {Injector, NgModule} from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { TheWebcomponentComponent } from './the-webcomponent/the-webcomponent.component';
+import {createCustomElement} from "@angular/elements";
+
 @NgModule({
     declarations: [TheWebcomponentComponent],
     imports: [BrowserModule],
@@ -37,6 +43,7 @@ export class AppModule {
 }
 ngDoBootstrap() {}
 }
+
 ```
 > please remove the following files:
 > * app.component.ts
