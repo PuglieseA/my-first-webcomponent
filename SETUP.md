@@ -18,9 +18,9 @@ ng add @angular/elements
 In the next step you need to create a component. which you want to serve.
 
 ```
-ng generate component the-webcomponent
+ng generate component the-example
 ```
-> open the "the-component.component.ts" and change the selector to "the-webcomponent" else you will get an error at the runtime
+> open the "the-example.component.ts" and change the selector to "the-example" else you will get an error at the runtime
 
 Now you can deliver the component as a webcomponent like that:
 
@@ -39,7 +39,7 @@ import {createCustomElement} from "@angular/elements";
 export class AppModule {
     constructor(private injector: Injector) {
     const el = createCustomElement(TheWebcomponentComponent, { injector });
-    customElements.define('the-webcomponent', el);
+    customElements.define('the-example', el);
 }
 ngDoBootstrap() {}
 }
@@ -51,6 +51,7 @@ ngDoBootstrap() {}
 > * app.component.html
 > * app.component.scss
 
+<br><br>
 # Build & Deliver
 
 Please install the following packages
@@ -75,7 +76,7 @@ build = async () =>{
     ];
 
     await fs.ensureDir('dist');
-    await concat(files, 'dist/my-first-webcomponent/my-webcomponent.js');
+    await concat(files, 'dist/my-first-webcomponent/the-example.js');
 }
 build();
 ```
@@ -95,7 +96,7 @@ Add the "build:wc" script to you package.json and call it inside the "build" scr
 ...
 }
 ```
-
+<br><br>
 # Embed
 
 create a index.html file in the root folder with the following code:
@@ -110,9 +111,9 @@ create a index.html file in the root folder with the following code:
     <title>Testing the Web Component</title>
 </head>
 <body>
-<the-webcomponent></the-webcomponent>
+<the-example></the-example>
 
-<script type="text/javascript" src="dist/my-first-webcomponent/my-webcomponent.js"></script>
+<script type="text/javascript" src="dist/my-first-webcomponent/the-example.js"></script>
 </body>
 </html>
 

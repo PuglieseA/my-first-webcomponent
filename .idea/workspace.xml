@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a55936f1-7bf3-4444-befd-649242979d28" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/EXERCISE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui-example.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SETUP.md" beforeDir="false" afterPath="$PROJECT_DIR$/SETUP.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +53,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="my-first-webcomponent" />
@@ -75,7 +83,7 @@
       <updated>1685523252299</updated>
       <workItem from="1685523253823" duration="10282000" />
       <workItem from="1685540594531" duration="562000" />
-      <workItem from="1685545224103" duration="148000" />
+      <workItem from="1685545224103" duration="3293000" />
     </task>
     <servers />
   </component>
