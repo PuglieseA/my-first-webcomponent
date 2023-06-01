@@ -116,7 +116,6 @@ create a index.html file in the root folder with the following code:
 <script type="text/javascript" src="dist/my-first-webcomponent/the-example.js"></script>
 </body>
 </html>
-
 ```
 
 start the html file with a web server you prefer
@@ -125,4 +124,5 @@ start the html file with a web server you prefer
 
 start the webserver and you should see your first webcomponent running
 
-> in case you use serve just execute ```serve``` in the root folder where you created the index.html. <br>your application should be accessable under [http://localhost:3000](http://localhost:3000)
+> Don't forget to execute ```yarn build``` to see a result. <br><br>
+> in case you use serve just execute ```serve``` in the root folder where you created the index.html. <br>your application should be accessible under [http://localhost:3000](http://localhost:3000)
