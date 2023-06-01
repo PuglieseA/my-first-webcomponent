@@ -27,18 +27,18 @@ Now you can deliver the component as a webcomponent like that:
 ```angularjs
 import {Injector, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { TheWebcomponentComponent } from './the-webcomponent/the-webcomponent.component';
+import { TheExampleComponent } from './the-example/the-example.component';
 import {createCustomElement} from "@angular/elements";
 
 @NgModule({
-    declarations: [TheWebcomponentComponent],
+    declarations: [TheExampleComponent],
     imports: [BrowserModule],
     providers: [],
-    bootstrap: [TheWebcomponentComponent]
+    bootstrap: [TheExampleComponent]
 })
 export class AppModule {
     constructor(private injector: Injector) {
-    const el = createCustomElement(TheWebcomponentComponent, { injector });
+    const el = createCustomElement(TheExampleComponent, { injector });
     customElements.define('the-example', el);
 }
 ngDoBootstrap() {}
